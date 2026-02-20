@@ -3,13 +3,16 @@ import Hero from "./MainPage/Hero";
 import IntroMenu from "./MainPage/IntroMenu";
 import Menu from "./MainPage/Menu";
 
-export default function MainPage(){
+export default function MainPage() {
     return (
-        <main>
+        <>
             <Hero />
-            <IntroMenu />
-            <Menu />
+                <main>
+                    <IntroMenu />
+                    <Menu />
+                </main>
             <Footer />
-        </main>
+        </>
+
     )
 }

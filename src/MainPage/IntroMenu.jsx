@@ -1,5 +1,5 @@
-import OptionItem from "../MainPageItems/OptionItem"
-import MainCard from "../MainPageItems/MainCard"
+import OptionItem from "./MainPageItems/OptionItem"
+import MainCard from "./MainPageItems/MainCard"
 import { iconItems } from "./data"
 
 export default function IntroMenu() {

@@ -6,8 +6,8 @@ const params = [
 ];
 
 import { iconItems } from "./data"
-import OptionItem from "../MainPageItems/OptionItem"
-import MenuCard from "../MainPageItems/MenuCard"
+import OptionItem from "./MainPageItems/OptionItem"
+import MenuCard from "./MainPageItems/MenuCard"
 
 export default function Menu() {
     return (

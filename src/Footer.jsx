@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { footerIconItems, footerMenus, footerInstagramUrls } from "./MainPage/data";
-import OptionItem from "./MainPageItems/OptionItem";
+import OptionItem from "./MainPage/MainPageItems/OptionItem";
 
 export default function Footer() {
     return (
@@ -25,8 +25,8 @@ export default function Footer() {
                 <div className="xl:col-start-4">
                     <h4 className="text-white text-xl">Instagram</h4>
                     <div className="mt-10 flex flex-wrap gap-2">
-                        {footerInstagramUrls.map(item =>
-                            <Link>
+                        {footerInstagramUrls.map((item, index) =>
+                            <Link key={index} to='/'>
                                 <img src={item} />
                             </Link>
                         )}

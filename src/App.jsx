@@ -1,11 +1,13 @@
-import { useState } from 'react'
 import MainPage from './MainPage';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import Order from './OrderPage/Order';
+import OrderPage from './OrderPage';
+import { useState } from 'react';
+import { initialState } from './initialState';
+import Success from './Success';
 
 function App() {
 
-  
+  const [formState, setFormState] = useState(initialState)
 
   return (
     <>
@@ -15,7 +17,10 @@ function App() {
             <MainPage />
           </Route>
           <Route path="/siparis">
-            <Order />
+            <OrderPage state={formState} setState={setFormState} />
+          </Route>
+          <Route path="/success">
+            <Success state={formState}/>
           </Route>
         </Switch>
       </Router>
