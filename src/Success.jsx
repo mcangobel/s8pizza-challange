@@ -41,7 +41,7 @@ export default function Success({ state }) {
                         <div>Ekler:</div>
                         <div class="ml-auto">{state.additions.length * 10 + '₺'}</div>
                         <div>Toplam:</div>
-                        <div class="ml-auto">{state.additions.length * 10 + 450 + '₺'}</div>
+                        <div class="ml-auto">{state.additions.length * 10 + 450 * state.count + '₺'}</div>
                     </div>
                 </div>
             </div>
